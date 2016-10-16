@@ -1,0 +1,11 @@
+﻿
+
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="ProMigrationResources" Url="_catalogs/masterpage" Path="ProBrandingResources">
+    <File Url="_custom.master" Type="GhostableInLibrary" IgnoreIfAlreadyExists="TRUE">
+      <Property Name="UIVersion" Value="4"></Property>
+      <Property Name="ContentTypeId" Value="0x010105"></Property>
+    </File> 
+  </Module>
+</Elements>

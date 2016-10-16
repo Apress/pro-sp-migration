@@ -1,0 +1,5 @@
+C:\Book\Pro Migration VS2010\Pro Migration VS2010\bin\Debug\Pro Migration VS2010.dll
+C:\Book\Pro Migration VS2010\Pro Migration VS2010\bin\Debug\Pro Migration VS2010.pdb
+C:\Book\Pro Migration VS2010\Pro Migration VS2010\obj\Debug\ResolveAssemblyReference.cache
+C:\Book\Pro Migration VS2010\Pro Migration VS2010\obj\Debug\Pro Migration VS2010.dll
+C:\Book\Pro Migration VS2010\Pro Migration VS2010\obj\Debug\Pro Migration VS2010.pdb

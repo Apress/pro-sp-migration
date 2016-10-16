@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{681CEBB0-7A2F-4F86-A99E-7301DE45D0B9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pro_Migration_VS2010</RootNamespace>
+    <AssemblyName>Pro Migration VS2010</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BB1F664B-9266-4fd6-B973-E1E44974B511};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Security" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Basic Math Operation\Basic Math Operation.cs" />
+    <Compile Include="Basic Math Operation\Basic Math OperationUserControl.ascx.cs">
+      <DependentUpon>Basic Math OperationUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Basic Math Operation\Basic Math OperationUserControl.ascx.designer.cs">
+      <DependentUpon>Basic Math OperationUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Features\ProMigrationBrandingFeature\ProMigrationBrandingFeature.EventReceiver.cs">
+      <DependentUpon>ProMigrationBrandingFeature.feature</DependentUpon>
+    </Compile>
+    <Compile Include="ProMigrationBrandingEventReceiver\ProMigrationBrandingEventReceiver.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Basic Math Operation\Basic Math Operation.webpart" />
+    <None Include="Basic Math Operation\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{19bae4f3-bca4-4137-8fde-164aa5538d61}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\ProMigrationBrandingFeature\ProMigrationBrandingFeature.feature">
+      <FeatureId>{44025a4e-d504-4408-b41b-693e3ef59e61}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c29f6268-59aa-4cb0-a808-d03d46ee6b4c}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{dee42cb5-c749-4cd5-aedf-da248ca34bee}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="ProMigrationBrandingEventReceiver\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a582c13c-6f9a-4e83-aefc-276daec79067}</SharePointProjectItemId>
+    </None>
+    <None Include="ProMigrationResources\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9da455bc-381d-468f-9348-67430a867486}</SharePointProjectItemId>
+    </None>
+    <None Include="ProMigrationResources\_custom.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Layouts\Pro Migration Branding\Images\" />
+    <Folder Include="Layouts\Pro Migration Branding\Scripts\" />
+    <Folder Include="Layouts\Pro Migration Branding\Styles\" />
+    <Folder Include="Layouts\Pro Migration jQuery\" />
+    <Folder Include="Layouts\Pro Migration VS2010\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Basic Math Operation\Basic Math OperationUserControl.ascx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="Basic Math Operation\Elements.xml" />
+    <Content Include="Features\ProMigrationBrandingFeature\ProMigrationBrandingFeature.Template.xml">
+      <DependentUpon>ProMigrationBrandingFeature.feature</DependentUpon>
+    </Content>
+    <Content Include="ProMigrationBrandingEventReceiver\Elements.xml" />
+    <Content Include="ProMigrationResources\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" />
+</Project>

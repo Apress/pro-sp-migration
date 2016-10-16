@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="Pro_Migration_VS2010.Basic_Math_Operation.Basic_Math_Operation, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Basic Math Operation</property>
+        <property name="Description" type="string">My Visual WebPart</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

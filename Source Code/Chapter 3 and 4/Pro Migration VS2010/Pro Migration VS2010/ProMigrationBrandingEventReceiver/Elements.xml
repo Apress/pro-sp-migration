@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers >
+
+  <Receiver>
+<Name>ProMigrationBrandingEventReceiverWebProvisioned</Name>
+<Type>WebProvisioned</Type>
+<Assembly>$SharePoint.Project.AssemblyFullName$</Assembly>
+<Class>Pro_Migration_VS2010.ProMigrationBrandingEventReceiver.ProMigrationBrandingEventReceiver</Class>
+<SequenceNumber>1000</SequenceNumber>
+</Receiver>
+</Receivers>
+</Elements>

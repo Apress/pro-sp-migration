@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="dee42cb5-c749-4cd5-aedf-da248ca34bee" solutionId="dee42cb5-c749-4cd5-aedf-da248ca34bee" resetWebServer="false" name="Pro_Migration_VS2010" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="44025a4e-d504-4408-b41b-693e3ef59e61" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="c29f6268-59aa-4cb0-a808-d03d46ee6b4c" />
+  </projectItems>
+</package>
